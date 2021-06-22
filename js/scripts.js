@@ -291,11 +291,11 @@ function buttonClick () {
     increment();
 };
 
-currencyBtn.addEventListener("click", buttonClick);
+/*currencyBtn.addEventListener("click", buttonClick);
 timeSpeedBtn.addEventListener("click", accelerateTimeBtn);
 testBtn.addEventListener("click", testFunction);
 saveBtn.addEventListener("click", saveGame);
-loadBtn.addEventListener("click", loadGame);
+loadBtn.addEventListener("click", loadGame);*/
 
 //class selection buttons
 selectMechBtn.spec="mechanic";selectMechBtn.addEventListener("click",selectSpec);
