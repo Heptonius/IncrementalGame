@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Incremental Game</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <div id="phase0div">
+        <h2 class="starterText" id="starterText0">This desolate universe feels so empty, even for an eternal soul like you. What is that? Unordinary scar in the spacetime in nearby galaxy’s solar system seems to weep and wail. You’ve seen this before, you’ve heard this before, you know it. Could this be where it all began?</h2>
+        <h2 class="starterText" id="starterText1">One of the solar system's planets not far from the scar invokes a hope in you. Branching spirit links of individuals with great potential pulse and call you. Tapping into them and taking control won't be difficult.</h2>
+        <h2 class="starterText" id="starterText2">Will you choose a path and try to change the inevitable?</h2>
+        <div class="startButtons" id="startButtonsDiv">
+            <button class="selectionBtns" id="selectMechanicBtn">Select Mechanic</button>
+            <button class="selectionBtns" id="selectWarriorBtn">Select Warrior <br/>(under heavy construction)</button>
+            <button class="selectionBtns" id="selectPriestBtn">Select Priest <br/>(under heavy construction)</button>
+        </div>
+    </div>
+    <main id="main-content-window">        
+        <div class="title-part-div">
+            <div id="title-div">
+                <h1 class="titleh1">Incremental Game</h1>      
+            </div>
+            <div id="game-variables-div">            
+                <div class="game-variable" id="credits_div">
+                    <h3 class="credits_txt">Credits</h3> 
+                    <h2 class="credits_txt" id="credits_value_txt" currency="money">0 + 0/s</h2>
+                </div>
+                <div class="game-variable prestigeCurrency" id="pr1currency_div">
+                    <h3 class="credits_txt">P1 Curr</h3> 
+                    <h2 class="credits_txt" id="pr1currency_value_txt" currency="money">0 + 0/s</h2>
+                </div>
+                <div class="game-variable prestigeCurrency" id="pr2currency_div">
+                    <h3 class="credits_txt">P2 Curr</h3> 
+                    <h2 class="credits_txt" id="pr2currency_value_txt" currency="money">0 + 0/s</h2>
+                </div>
+                <div class="game-variable prestigeCurrency" id="pr3currency_div">
+                    <h3 class="credits_txt">P3 Curr</h3> 
+                    <h2 class="credits_txt" id="pr3currency_value_txt" currency="money">0 + 0/s</h2>
+                </div>
+                <div class="game-variable prestigeCurrency" id="pr4currency_div">
+                    <h3 class="credits_txt">P4 Curr</h3> 
+                    <h2 class="credits_txt" id="pr4currency_value_txt" currency="money">0 + 0/s</h2>
+                </div>
+                <div class="title-line-div" id="spacer3"></div>
+                <div class="game-variable secondaryCurrency" id="sec1currency_div">
+                        <h3 class="credits_txt" id="sec1currency_txt">Secondary 1</h3> 
+                    <h2 class="credits_txt" id="sec1currency_value_txt" currency="money">0 + 0/s</h2>              
+                </div>
+                <div class="game-variable secondaryCurrency" id="sec2currency_div">
+                        <h3 class="credits_txt" id="sec2currency_txt">Secondary 2</h3> 
+                    <h2 class="credits_txt" id="sec2currency_value_txt" currency="money">0 + 0/s</h2>
+                </div>
+                <div class="game-variable secondaryCurrency" id="sec3currency_div">
+                        <h3 class="credits_txt" id="sec3currency_txt">Secondary 3</h3> 
+                    <h2 class="credits_txt" id="sec3currency_value_txt" currency="money">0 + 0/s</h2>
+                </div>
+                <div class="game-variable secondaryCurrency" id="sec4currency_div">
+                        <h3 class="credits_txt" id="sec4currency_txt">Secondary 4</h3> 
+                    <h2 class="credits_txt" id="sec4currency_value_txt" currency="money">0 + 0/s</h2>
+                </div>
+                <div class="game-variable secondaryCurrency" id="sec5currency_div">
+                        <h3 class="credits_txt" id="sec5currency_txt">Secondary 5</h3> 
+                    <h2 class="credits_txt" id="sec5currency_value_txt" currency="money">0 + 0/s</h2>
+                </div>
+            </div>   
+        </div>    
+        <div id="title-line-div-wrapper">
+            <div id="navbar-title-line1" class="title-line-div"></div>
+                <div class="navbar-items-wrapper">
+                    <div class="utility-btns-div" id="function-btns">
+                            <button class="building-btn utility-btn" id="load-btn">LOAD Game</button>
+                            <button class="building-btn utility-btn" id="save-btn">SAVE Game</button>
+                            <button class="building-btn utility-btn" id="currency_btn">MOAR MUNEY!!!</button>
+                            <button class="building-btn utility-btn" id="time_speed_btn">Accelerate Time!</button>
+                            <button class="building-btn utility-btn" id="test_btn">Test Button</button>
+                    </div>
+                </div>
+            <div id="navbar-title-line2" class="title-line-div"></div> 
+        </div>    
+        <div id="main-tab-1">
+            <div class="main-tab-col" id="main-tab-1-col-1">
+                <div class="tasks-div">
+                    <button class="task-btn" id="task-btn1">
+                        <div class="task-btn-txt-div">
+                            <h3 class="task-Name" id="task1-name">Task 1</h3>
+                            <h3 class="task-lvl" id="task1-lvl">LVL 1</h3>
+                            <h3 class="task-exp" id="task1-exp">0 / 50 EXP</h3>
+                        </div>
+                    </button>
+                    <button class="task-btn" id="task-btn2">
+                        <div class="task-btn-txt-div">
+                            <h3 class="task-Name" id="task2-name">Task 2</h3>
+                            <h3 class="task-lvl" id="task2-lvl">LVL 1</h3>
+                            <h3 class="task-exp" id="task2-exp">0 / 50 EXP</h3>                        
+                        </div>
+                    </button>
+                    <button class="task-btn" id="task-btn3">
+                        <div class="task-btn-txt-div">
+                            <h3 class="task-Name" id="task3-name">Task 3</h3>
+                            <h3 class="task-lvl" id="task3-lvl">LVL 1</h3>
+                            <h3 class="task-exp" id="task3-exp">0 / 50 EXP</h3>
+                        </div>
+                    </button>
+                    <button class="task-btn" id="task-btn4">
+                        <div class="task-btn-txt-div">
+                            <h3 class="task-Name" id="task4-name">Task 4</h3>
+                            <h3 class="task-lvl" id="task4-lvl">LVL 1</h3>
+                            <h3 class="task-exp" id="task4-exp">0 / 50 EXP</h3>
+                        </div>
+                    </button>
+                    <button class="task-btn" id="task-btn5">
+                        <div class="task-btn-txt-div">
+                            <h3 class="task-Name" id="task5-name">Task 5</h3>
+                            <h3 class="task-lvl" id="task5-lvl">LVL 1</h3>
+                            <h3 class="task-exp" id="task5-exp">0 / 50 EXP</h3>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="main-tab-col" id="main-tab-1-col-2">
+                <div id="buildings_div">
+                    <div class="building-div">
+                        <button class="building-btn" id="building1_btn"><h3 class="building-btn-txt" id="building-btn-txt-1">Buy building 1</h3></button>
+                        <h3 class="building-cnt" id="building1_cnt_txt">0</h3>
+                    </div>
+                    <div class="building-div invisible">
+                        <button class="building-btn" id="building2_btn"><h3 class="building-btn-txt" id="building-btn-txt-2">Buy building 2</h3></button>
+                        <h3 class="building-cnt" id="building2_cnt_txt">0</h3>
+                    </div>
+                    <div class="building-div invisible">
+                        <button class="building-btn" id="building3_btn"><h3 class="building-btn-txt" id="building-btn-txt-3">Buy building 3</h3></button>
+                        <h3 class="building-cnt" id="building3_cnt_txt">0</h3>
+                    </div>
+                    <div class="building-div invisible">
+                        <button class="building-btn" id="building3_btn"><h3 class="building-btn-txt" id="building-btn-txt-3">Buy building 3</h3></button>
+                        <h3 class="building-cnt" id="building3_cnt_txt">0</h3>
+                    </div>
+                    <div class="building-div invisible">
+                        <button class="building-btn" id="building3_btn"><h3 class="building-btn-txt" id="building-btn-txt-3">Buy building 3</h3></button>
+                        <h3 class="building-cnt" id="building3_cnt_txt">0</h3>
+                    </div>
+                    <div class="building-div invisible">
+                        <button class="building-btn" id="building3_btn"><h3 class="building-btn-txt" id="building-btn-txt-3">Buy building 3</h3></button>
+                        <h3 class="building-cnt" id="building3_cnt_txt">0</h3>
+                    </div>
+                    <div class="building-div invisible">
+                        <button class="building-btn" id="building3_btn"><h3 class="building-btn-txt" id="building-btn-txt-3">Buy building 3</h3></button>
+                        <h3 class="building-cnt" id="building3_cnt_txt">0</h3>
+                    </div>
+                </div>
+                <div id="upgrades-div">
+                    <div class="upgrade-div invisible" id="upg1">
+                        <h3 class="upgrade-name">Upgrade Name I guess</h3>
+                        <hr class="upg-txt-divier">
+                        <h4 class="upgrade-text">Boosts buildings number 1 based on how many you have.</h4>
+                    </div>
+                    <div class="upgrade-div invisible">
+                        <h3 class="upgrade-name">Upgrade Name I guess</h3>
+                        <hr class="upg-txt-divier">
+                        <h4 class="upgrade-text">Boosts buildings number 1 based on how many you have.</h4>
+                    </div>
+                    <div class="upgrade-div invisible">
+                        <h3 class="upgrade-name">Upgrade Name I guess</h3>
+                        <hr class="upg-txt-divier">
+                        <h4 class="upgrade-text">Boosts buildings number 1 based on how many you have.</h4>
+                    </div>
+                    <div class="upgrade-div invisible">
+                        <h3 class="upgrade-name">Upgrade Name I guess</h3>
+                        <hr class="upg-txt-divier">
+                        <h4 class="upgrade-text">Boosts buildings number 1 based on how many you have.</h4>
+                    </div>
+                    <div class="upgrade-div invisible">
+                        <h3 class="upgrade-name">Upgrade Name I guess</h3>
+                        <hr class="upg-txt-divier">
+                        <h4 class="upgrade-text">Boosts buildings number 1 based on how many you have.</h4>
+                    </div>
+                    <div class="upgrade-div invisible">
+                        <h3 class="upgrade-name">Upgrade Name I guess</h3>
+                        <hr class="upg-txt-divier">
+                        <h4 class="upgrade-text">Boosts buildings number 1 based on how many you have.</h4>
+                    </div>
+                    <div class="upgrade-div invisible">
+                        <h3 class="upgrade-name">Upgrade Name I guess</h3>
+                        <hr class="upg-txt-divier">
+                        <h4 class="upgrade-text">Boosts buildings number 1 based on how many you have.</h4>
+                    </div>
+                    <div class="upgrade-div invisible">
+                        <h3 class="upgrade-name">Upgrade Name I guess</h3>
+                        <hr class="upg-txt-divier">
+                        <h4 class="upgrade-text">Boosts buildings number 1 based on how many you have.</h4>
+                    </div>         
+                </div>
+            </div>
+            <div class="main-tab-col" id="main-tab-1-col-3">
+                <div class="text-log-div" id="text-log-holder">      
+                    <!--<div class="text-log">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat voluptates deleniti consectetur corrupti explicabo libero, 
+                        nam alias, pariatur ab harum natus rem quisquam, dolor dignissimos? Ipsa, asperiores. Pariatur, nesciunt odit.</div>
+                    <div class="text-log">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat voluptates deleniti consectetur corrupti explicabo libero, 
+                            nam alias, pariatur ab harum natus rem quisquam, dolor dignissimos? Ipsa, asperiores. Pariatur, nesciunt odit.</div>
+                    <div class="text-log">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat voluptates deleniti consectetur corrupti explicabo libero, 
+                            nam alias, pariatur ab harum natus rem quisquam, dolor dignissimos? Ipsa, asperiores. Pariatur, nesciunt odit.</div>-->
+                </div>
+            </div>
+            <!--<div id="tasks-adventures-div">
+                <div id="adventure-menu">
+                    <div class="" id="adventure-tab-nav">
+                        <button class="adventure-tab-nav-btn" id="adventure-tab-nav-btn1">Switch to tab 1</button>
+                        <button class="adventure-tab-nav-btn" id="adventure-tab-nav-btn2">Switch to tab 2</button>
+                        <button class="adventure-tab-nav-btn" id="adventure-tab-nav-btn3">Switch to tab 3</button>
+                        <button class="adventure-tab-nav-btn" id="adventure-tab-nav-btn4">Switch to tab 4</button>
+                    </div>
+                    <div class="adventure-tab" id="adventure-tab1">
+                        <h2>This is adventure tab 1</h2>
+                    </div>
+                    <div class="adventure-tab" id="adventure-tab2">
+                        <h2>This is adventure tab 2</h2>
+                    </div>
+                    <div class="adventure-tab" id="adventure-tab3">
+                        <h2>This is adventure tab 3</h2>
+                    </div>
+                    <div class="adventure-tab" id="adventure-tab4">
+                        <h2>This is adventure tab 4</h2>
+                    </div>                
+                </div>           
+            </div>-->
+        </div>       
+    </main>
+    <!--<div id="spacer2"></div>
+    <footer>Big Footer Nibbas</footer>-->
+</body>
+
+<!-- script links -->  
+<script type="module" src="js/scripts.js"></script>
+<script type="module" src="js/classes.js"></script>
+<script src="js/break_eternity.js"></script>
+
+
+<!-- react components -->
+
+
+</html>
